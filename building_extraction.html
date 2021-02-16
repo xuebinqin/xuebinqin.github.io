@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage Xuebin Qin">
+    <meta name="author" content="Xuebin Qin">
+
+    <title>Xuebin Qin University of Alberta</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Xuebin Qin</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+		    
+                    <!--<li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>-->
+                </ul>
+		<img src="img/UA-logo.png" alt="ua_logo" width="200">
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header style="background-color:rgb(255,255,255);">
+        <div class="container"  id="maincontent" tabindex="-1" style="color:rgb(0,0,0);">
+            <div class="row">
+                <div class="col-lg-12">
+		    <div>
+                        <h1 style="color:rgb(0,0,0)">Accurate Outline Extraction of Individual Building from Very High Resolution Optical Images</h1>
+	            </div>
+<br>
+		    <div>
+			<p class="text-center", style="color:rgb(0,0,0)">Xuebin Qin<sup>1</sup>, Shida He<sup>1</sup>, Xiucheng Yang<sup>3</sup>, Masood Dehghan<sup>1</sup>, Qiming Qin<sup>2</sup> and Martin Jagersand<sup>1</sup></p>
+	            </div>
+<br>
+		    <div>
+			<p style="color:rgb(0,0,0)">1. Department of Computing Science, University of Alberta, Edmonton, AB, Canada, T6G 2R3.</p>
+	            </div>
+		    <div>
+			<p style="color:rgb(0,0,0)">2. Institute of Remote Sensing and Geographic Information System, Peking University (IRSGIS, PKU), Beijing, P.R. China, 100871.</p>
+		    <p style="color:rgb(0,0,0)">3. ICube Laboratory, University of Strasbourg, Strasbourg, France, 67081.</p>
+	            </div>
+
+<br>
+		    <div>
+			<h2 class="text-center", style="color:rgb(0,0,0)">ABSTRACT</h2>
+	            </div>
+<br><br>
+
+	            <div>
+			<p class="text-justify", style="color:rgb(0,0,0)", style="text-indent:2em">&nbsp &nbsp In this paper, we present a novel approach for extracting accurate outlines of single buildings from Very-High Resolution (VHR, 0.1-0.4 m) images. Building outlines are defined as polygons here. 
+Our approach operates on a set of straight line segments that are detected by a line detector. 
+It groups a subset of detected line segments and connects them to form a closed polygon.
+Particularly, we define a new grouping cost and construct an undirected graph G(V,E) based on endpoints of those extracted line segments. 
+The closed boundary extraction problem is then formulated as a problem of searching a special graph cycle which satisfies certain grouping cost.
+To solve the graph cycle searching problem, we adapt the "Bidirectional Shortest Path (BDSP)" method. We validated our method on a newly created dataset which contains 123 images of different building roofs. The experimental results with average Intersection-over-Union of 90.56% and average alignment error of 6.56 pixels demonstrate that our approach is robust to different shapes of building roofs and outperforms state-of-the-art methods on our dataset.</p>
+	            </div>
+<hr>
+<br>
+		    <div>
+			<h2 class="text-center", style="color:rgb(0,0,0)">1. Methodology</h2>
+			<br>
+			<p class="text-justify", style="color:rgb(0,0,0)"> &nbsp &nbsp In this paper, we propose a novel perceptual grouping cost: </p>
+                        <img class="img-responsive" src="img/building_extraction_Equ1.png" alt="Xuebin_Photo" width="300">
+			<p class="text-justify", style="color:rgb(0,0,0)">where e<SUB>j</SUB> denotes the length of a gap between two sequentially connected line segments and ∑<sup>k</sup><SUB>j</SUB>
+e<SUB>j</SUB> is the total gap length along a closed polygon, l<SUB>i</SUB> indicates the length of a line segment and (∑<sup>n</sup><SUB>i</SUB>l<SUB>i</SUB> + ∑<sup>k</sup><SUB>j</SUB>e<SUB>j</SUB>)is the perimeter of the polygon and A is the area of the polygon. The closed polygon with the smallest G(Γ) is taken as the final optimal outline.</p>
+			<br>
+			<p class="text-justify",style="color:rgb(0,0,0)">&nbsp &nbsp Then we built a weighted undirected graph based on the detected line segments using Delaunay Triangulation, as shown in (a)-(c) of Fig. 1. The optimal cycle is searched from this graph via our recently proposed "Bi-Directional Shortest Path (BDSP)" algorithm, see (d) in Fig. 1.</p>
+                        <img class="img-responsive" src="img/building_extraction_Fig1.png" alt="Xuebin_Photo" width="600">
+                        <p style="color:rgb(0,0,0)">Fig. 1. Graph construction and optimization</p>
+	            </div>
+<hr>
+<br>
+		    <div>
+			<h2 class="text-center", style="color:rgb(0,0,0)">2. Experimental Results</h2>
+			<br>
+			<p class="text-justify", style="color:rgb(0,0,0)">&nbsp &nbsp To assess the performance of our approach, we built a dataset for building outline extraction on VHR aerial and satellite images of urban areas. The resolution of these images varies from 0.1-0.4 m. The dataset contains 123 images of buildings with different shapes.  The accurate Ground Truth (GT) is manually labeled  for all the images. We conduct our experiments on this dataset and compare the results with other five methods: RRC, MB+, MR, SO, wCtr.</p>
+                        <img class="img-responsive" src="img/building_extraction_Fig3.png" alt="Xuebin_Photo" width="900">
+                        <p style="color:rgb(0,0,0)">Fig. 2. Sample results of different methods: the first column is the original image, the second column is the ground truth, the third column is the result of our method, column four to column eight are results produce by RRC, MB+, MR, SO, wCtr.</p>
+			<br>
+                        <img class="img-responsive" src="img/building_extraction_Fig4.png" alt="Xuebin_Photo" width="900">
+                        <p style="color:rgb(0,0,0)">Fig. 3. Region  and  edge  based  evaluations.  (a)  Region  based  evaluation:  number  of  images  where  the IoU is  greater  than certain threshold. (b) Edge based evaluation: number of images where the EaveAL is less than certain threshold.</p>
+			<br>
+                        <img class="img-responsive" src="img/building_extraction_Tab1.png" alt="Xuebin_Photo" width="600">
+                        
+	            </div>
+<hr>
+<br>
+		    <div>
+			<h2 class="text-center", style="color:rgb(0,0,0)">3. RESOURCES</h2>
+	            </div>
+<br>
+		    <div>
+			<p class="text-center", style="color:rgb(0,0,0)">Download: <a href="BuildingExtraction_Code_Data.zip" target="_blank">Matlab Code and Dataset</a></p>
+	            </div>
+<br>
+                    
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Vision Lab (CSC-353)<br>
+			Computing Science Center<br>
+			University of Alberta<br>
+			Edmonton, AB, CANADA T6G2S4</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About</h3>
+                        <ul class="list-inline">
+                            <!--<li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>-->
+                            <li>
+                                <a href="https://www.linkedin.com/in/%E9%9B%AA%E5%BD%AC-%E7%A7%A6-3b3878a3/" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/NathanUA" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>VISITORS</h3>
+                        <!--<img src="img/lianmeng.JPG" width="100px">-->
+                        <a href='https://clustrmaps.com/site/19o45'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=m&d=KU49W0CDfMkh1mruGzoJmpk1HntiofQKkTmWaGHAZgs&co=2c3e50&ct=ffffff'/></a>
+                        <!--<h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Xuebin Qin 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+    
+</body>
+
+</html>

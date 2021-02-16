@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage Xuebin Qin">
+    <meta name="author" content="Xuebin Qin">
+
+    <title>Xuebin Qin University of Alberta</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Xuebin Qin</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+                    <!--<li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>-->
+                </ul>
+		<img src="img/UA-logo.png" alt="ua_logo" width="200">
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header style="background-color:rgb(255,255,255);">
+        <div class="container"  id="maincontent" tabindex="-1" style="color:rgb(0,0,0);">
+            <div class="row">
+                <div class="col-lg-12">
+		    <div>
+                        <h1 style="color:rgb(0,0,0)">Salient Object Detection</h1>
+                        <!-- <p>[<a href="xuebin_qin_candidacy_report_12db.pdf" target="_blank">pdf standard version</a>][<a href="xuebin_qin_candidacy_report_14sg.pdf" target="_blank">pdf e-devices friendly</a>]</p> -->
+	            </div>
+<br>
+		    <div>
+                        <p class="text-center", style="color:rgb(0,0,0)">PhD Candidate: Xuebin Qin</p>
+                        <br>
+                        <p class="text-center", style="color:rgb(0,0,0)">Supervisor: Dr. Martin Jagersand</p>
+	            </div>
+<br>
+		    <div>
+                        <p style="color:rgb(0,0,0)">Department of Computing Science, University of Alberta, Edmonton, AB, Canada, T6G 2R3.</p>
+	            </div>
+
+<br>
+		  <div>
+			<h2 class="text-center", style="color:rgb(0,0,0)">1. Overview</h2>
+	    </div>
+<br><br>
+
+	            <div>
+                        <p class="text-justify", style="color:rgb(0,0,0)", style="text-indent:2em">&nbsp &nbsp
+                          Human vision system has an effective mechanism for retrieving and localizing the most
+                          important information from visual scenes.
+                          In computer vision, Salient Object Detection (SOD) algorithms aim at simulating this mechanism
+                          by extracting or segmenting these salient targets and elements from given images or video frames.
+                          Such algorithms can be used in a wide range of applications such as image segmentation, image editing,
+                          visual tracking, robot navigation and etc.
+                          <br>
+                          <p align="justify"><b>The exact definitions of "salient object" in different applications are different and they heavily rely on
+                          the objectives of the applications.</b>
+                          While the objectives are mainly derived from the human expectations and knowledges.
+                          Therefore, the problem is how to build the connection between human knowledge and the final expected salient object detection results.
+                          There are mainly three ways of integrating human knowledge for SOD: <b>1) direct employing</b> (see Fig. 1), <b>2) explicit encoding</b> (see Fig. 2), <b>3) implicit encoding</b> (see Fig. 3).
+                          Hence, following three categories
+                          of salient object detection methods are studied in this thesis.</p>
+                          <br>
+                          <br>
+                          <p align="justify"><b>1) Interactive Annotation by ByLabel: A Boundary based Semi-Automatic Image Annotation Tool.</b><br>
+                          Direct employing refers to the process of interactively annotating and labeling the targets from given images or videos.
+                          We develop a novel general boundary based semi-automatic tool, ByLabel, for accurate image annotation.
+                          Given an image, existing labeling tools require the human to accurately click on numerous boundary points.
+                          ByLabel simplifies the niggling clicking operations in most of the existing label tools to sequentially selecting
+                          the automatically generated boundary fragment proposals, which greatly reduces the workload and time costs. </p>
+                          <br>
+                          <img class="img-responsive" src="phd-defense-img/interactive.png" alt="fig1" width="300">
+                          <p align="center">Fig. 1. Direct employing human knowledge by interactive annotation.</p>
+                          <br>
+                          <p align="justify"><b>2) Unsupervised Salient Closed Boundary Extraction by Perceptual Grouping.</b><br>
+                          Explicit encoding refers to the way that analyzing and extracting relevant principles and handcrafted features explicitly to describe the objectives.
+                          Different from ByLabel that relies on human intervention, salient closed boundary extraction aims to
+                          automatically identify and connect a subset of detected fragments to form a closed boundary by explicitly encoding
+                          the principles of Gestalt laws into the algorithms.
+                          Particularly, we formulate this problem as a graph-based optimization problem and propose a novel optimization algorithm "Bi-Directional Shortest Path (BDSP)" for solving that.
+                          In addition, we adapt our new method to different applications including individual building outline
+                          extraction and salient closed boundary tracking. </p>
+                          <br>
+                          <img class="img-responsive" src="phd-defense-img/unsupervised.png" alt="fig2" width="300">
+                          <p align="center">Fig. 2. Explicit encoding human knowledge into algorithms.</p>
+                          <br>
+                          <p align="justify"><b>3) Supervised Salient Object Detection by Deep Convolutional Neural Networks. </b><br>
+                          Implicit encoding happens in the process of human annotation for the generation of training datasets.
+                          Deep Convolutional Neural Networks (DCNN) are able to achieve more robust and accurate performance against
+                          traditional methods thanks to their strong fitting capability and the large amount of manually labeled training data.
+                          Instead of focusing on improving region accuracy, we propose a novel predict-refine architecture, BASNet, as well as a hybrid loss for
+                          achieving high boundary quality results.
+                          Experimental results show that our method outperforms the SOTA methods both in terms of regional and boundary evaluation measures. </p>
+                          <br>
+                          <img class="img-responsive" src="phd-defense-img/supervised.png" alt="fig3" width="600">
+                          <p align="center">Fig. 3. Implicit encoding human knowledge into annotated data.</p>
+                          <br>
+                          <!-- Furthermore, to achieve lighter model with faster speed, we further design a simple yet powerful  -->
+                          <!-- deep network architecture with a two levels nested U-structure for salient object detection.  -->
+
+
+
+                        </p>
+	            </div>
+<hr>
+<br>
+<br>
+		  <div>
+      <h2 class="text-center", style="color:rgb(0,0,0)"> 2. Proposed Methods</h2>
+      <br>
+      <h3 class="text-left", style="color:rgb(0,0,0)">2.1. Interactive Annotation by ByLabel: A Boundary based Semi-Automatic Image Annotation Tool</h3>
+      <br>
+      <img class="img-responsive" src="phd-defense-img/bylabel_bike.png" alt="fig4" width="1000">
+      <br>
+      <p class="text-justify">We develop a novel boundary based semiautomatic
+      tool, ByLabel, for accurate image annotation.
+      Given an image, ByLabel first detects its edge features and
+      computes high quality boundary fragments. Current labeling
+      tools require the human to accurately click on numerous
+      boundary points. ByLabel simplifies this to just selecting
+      among the boundary fragment proposals that ByLabel automatically
+      generates. To evaluate the performance of ByLabel,
+      10 volunteers, with no experiences of annotation, labeled
+      both synthetic and real images. Compared to the commonly
+      used tool LabelMe, ByLabel reduces image-clicks
+      and time by 73% and 56% respectively, while improving the
+      accuracy by 73% (from 1.1 pixel average boundary error to
+      0.3 pixel). The results show that our ByLabel outperforms
+      the state-of-the-art annotation tool in terms of efficiency,
+      accuracy and user experience. The tool is publicly available:
+      http://webdocs.cs.ualberta.ca/~vis/
+      bylabel/.</p>
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/E89HJ9y4eyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      </div>
+<br>
+
+<hr>
+<br>
+<div>
+			<h3 class="text-left", style="color:rgb(0,0,0)">2.2. Unsupervised Salient Closed Boundary Extraction by Perceptual Grouping</h3>
+      <br>
+      <p class="text-justify">The problem of salient closed boundary extraction here is solved by fragments based perceptual grouping.
+      The fragments based perceptual grouping refers to the process of identifying and connecting a subset of extracted edge fragments or line segments from the given images into a salient boundary.
+      The idea of perceptual grouping is originally derived from psychology based on the observation that humans naturally perceive objects as organized patterns and objects.
+      The perceptual grouping methods are usually based on a set of principles named as Gestalt Laws.
+      The Gestalt laws mainly consist of six aspects including proximity, closure, continuity, similarity, common fate and good form.
+      The Gestalt laws correspond to enforcing specified properties of a boundary.
+      The Gestalt laws enforce the to be grouped boundary to have specifical properties.
+      For example, proximity enforces to group the neighboring fragments with small gap length.
+      Closure requires the target boundary to be a cycle, Continuity corresponds to the regulation on the smoothness of the target boundary.</p>
+      <br>
+      <h4 class="text-center"> Contributions</h4>
+      <br>
+      <p class="text-justify"> (1) We develop a flexible graph-based optimization algorithm "Bi-Directional Shortest Path (BDSP)" for solving the problem of searching for a special cycle from an undirected group. We further adapt the algorithm for different applications. </p>
+      <br>
+      <img class="img-responsive" src="phd-defense-img/bdsp.png" alt="fig4" width="1000">
+      <img class="img-responsive" src="phd-defense-img/bdspp.png" alt="fig4" width="600">
+      <br>
+      <p class="text-justify"> (2) We define a novel saliency cost function which combines the proximity and continuity principle of Gestalt Laws for individual building outline extraction from high resolution aerial images. Combined with our graph-based optimization algorithm, our method is able to extract individual building outlines with different shapes and achieves state-of-the-art performance against those unsupervised saliency detection methods.</p>
+      <br>
+      <img class="img-responsive" src="phd-defense-img/building_extraction_Fig1.png" alt="fig4" width="600">
+      <img class="img-responsive" src="phd-defense-img/building_extraction_Fig3.png" alt="fig4" width="600">
+      <br>
+      <p class="text-justify"> (3) We adapt our BDSP for salient closed boundary tracking by line segments perceptual grouping. Particularly, we encode the area change constraint into the objective saliency function and solve that by our graph-based optimization method BDSP. To validate the performance, we build a salient closed boundary tracking dataset. The experimental results show that our method is able to effectively handle those extremal cases, where stable and enough regional texture information is unavailable. Our method runs at real-time. In addition, we adapt our method to a real robot pouring task, which further demonstrates the reliable performance of our method. </p>
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/RXjD0yHkukI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      <p class="text-justify"> (4) Since one pixel-width edge fragments are more accurate than line segments in describing smooth curves, we develop a novel method for edge fragments generation including a edge breaking and a fragments filtering method. Then, we replace the line segments used in the salient closed boundary tracking method described above with our newly detected high quality edge fragments. </p>
+	That greatly improves the tracking accuracy while keep the real-time speed.
+      <br>
+      <img class="img-responsive" src="phd-defense-img/Perceptual.png" alt="fig4" width="1000">
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Z5ty_rKveVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      <img class="img-responsive" src="phd-defense-img/LineEdge.png" alt="fig4" width="600">
+      <br>
+
+</div>
+<hr>
+<br>
+<div>
+			<h3 class="text-left", style="color:rgb(0,0,0)">2.3. Supervised Salient Object Detection by Deep Convolutional Neural Networks.</h3>
+			<br>
+      <p class="text-justify">
+      Most of the previous works however focus on
+      region accuracy but not on the boundary quality. In this paper,
+      we propose a predict-refine architecture, BASNet, and
+      a new hybrid loss for Boundary-Aware Salient object detection.
+      Specifically, the architecture is composed of a densely
+      supervised Encoder-Decoder network and a residual refinement
+      module, which are respectively in charge of saliency
+      prediction and saliency map refinement. The hybrid loss
+      guides the network to learn the transformation between the
+      input image and the ground truth in a three-level hierarchy
+      – pixel-, patch- and map- level – by fusing Binary Cross Entropy
+      (BCE), Structural SIMilarity (SSIM) and Intersectionover-Union
+      (IoU) losses. Equipped with the hybrid loss,
+      the proposed predict-refine architecture is able to effectively
+      segment the salient object regions and accurately predict
+      the fine structures with clear boundaries. Experimental results
+      on six public datasets show that our method outperforms
+      the state-of-the-art methods both in terms of regional
+      and boundary evaluation measures. Our method runs at
+      over 25 fps on a single GPU. The code is available at:
+      https://github.com/NathanUA/BASNet.</p>
+      <br>
+      <h4 class="text-center"> Contributions</h4>
+      <p class="text-justify">(1) A novel boundary-aware salient object detection network: BASNet, which consists of a deeply supervised encoder-decoder and a residual refinement module. </p>
+      <br>
+      <img class="img-responsive" src="phd-defense-img/basnet01.png" alt="fig4" width="600">
+      <br>
+      <img class="img-responsive" src="phd-defense-img/EncoderDecoder.png" alt="fig4" width="1000">
+      <br>
+      <p class="text-justify">(2) A novel hybrid loss that fuses BCE, SSIM and IoU  to supervise the training process of accurate salient object prediction on three levels: pixel-level, patch-level and map-level. </p>
+      <br>
+      <img class="img-responsive" src="phd-defense-img/loss.png" alt="fig4" width="1000">
+      <br>
+      <p class="text-justify">(3) A thorough evaluation of the proposed method that includes comparison with state-of-the-art methods on six widely used public datasets. Our method achieves state-of-the-art results in terms of both regional and boundary evaluation measures.</p>
+      <br>
+      <!-- <h3 class="text-left"> 3.2 Experimental Results</h3> -->
+      <p class="text-left"> 1) Quantitative Comparison</p>
+      <img class="img-responsive" src="phd-defense-img/quanTab.png" alt="fig4" width="1000">
+      <p class="text-left"> 2) Qualitative Comparison</p>
+      <img class="img-responsive" src="phd-defense-img/qual.png" alt="fig4" width="1000">
+      <br>
+</div>
+<hr>
+<!-- <br> -->
+<!-- <div> -->
+			<!-- <h2 class="text-center", style="color:rgb(0,0,0)">4. Conclusion</h2> -->
+			<!-- <br>
+			<p class="text-justify", style="color:rgb(0,0,0)"> &nbsp &nbsp
+
+      </p> -->
+<!-- </div> -->
+<!-- <hr> -->
+<br>
+<div>
+			<h2 class="text-center", style="color:rgb(0,0,0)">3. Published Papers </h2>
+			<br>
+      <p class="center"> (My thesis is based on [1][3][4][5][7].)</p>
+      <p class="text-justify"> [1]. <b>Xuebin Qin</b>, Zichen Zhang, Chenyang Huang, Chao Gao, Masood Dehghan and Martin Jagersand.<b>"BASNet: Boundary Aware Salient Object Detection"</b>.
+        The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019.
+        <br>[<a href="https://webdocs.cs.ualberta.ca/~xuebin/BASNet.pdf">pdf</a>][<a href="https://github.com/NathanUA/BASNet">code</a>]</p>
+      <p class="text-justify"> [2]. <b>Xuebin Qin</b>, Shida He, Zichen Zhang, Masood Dehghan, Jun Jin and Martin Jagersand. <b>"Real-Time Edge Template Tracking via Homography Estimation"</b>
+      The IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), October 2018.
+      <br>[<a href="https://webdocs.cs.ualberta.ca/~xuebin/IROS2018.pdf">pdf</a>][<a href="https://github.com/NathanUA/EdgeTemplateTracker">code</a>][<a href="https://github.com/NathanUA/Edge_Template_Tracking_Dataset" target="_blank">data</a>][<a href="https://www.youtube.com/watch?v=ohnUCm-Ffc4&feature=youtu.be" target="_balnk">video</a>]</p>
+      <br>
+      <p class="text-justify"> [3]. <b>Xuebin Qin</b>, Shida He, Zichen Zhang, Masood Dehghan and Martin Jagersand. <b>"ByLabel: A Boundary based Semi-Automatic Image Annotation Tool"</b>
+      IEEE Winter Conf. on Applications of Computer Vision (WACV), March 2018.
+      <br>[<a href="http://webdocs.cs.ualberta.ca/~vis/bylabel/548.pdf" target = "_blank">pdf</a>][<a href="https://github.com/NathanUA/ByLabel" target="_blank">code</a>][<a href="https://www.youtube.com/watch?v=E89HJ9y4eyI" target="_blank">video</a>][<a href="http://webdocs.cs.ualberta.ca/~vis/bylabel/" target="_blank">project page</a>]</p>
+      <br>
+      <p class="text-justify"> [4]. <b>Xuebin Qin</b>, Shida He, Zichen Zhang, Masood Dehghan and Martin Jagersand. <b>"Real-time salient closed boundary tracking using perceptual grouping and shape priors."</b>
+      The 28th British Machine Vision Conference, London, UK, September 2017. (<b>BMVC Spotlight Poster</b>)
+      <br>[<a href="BMVC_2017.pdf" target="_blank">pdf</a>][<a href="https://github.com/NathanUA/Edge-based-Salient-Boundary-Tracking.git" target="_blank">code</a>][<a href="https://github.com/NathanUA/SalientClosedBoundaryTrackingDataset" target="_blank">data</a>][<a href="https://www.youtube.com/watch?v=Z5ty_rKveVc&t=63s" target="_blank">video</a>][<a href="poster_BMVC0927.pdf" target="_blank">poster</a>]</p>
+      <br>
+      <p class="text-justify"> [5]. <b>Xuebin Qin</b>, Shida He, Camilo Perez Quintero, Abhineet Singh, Masood Dehghan and Martin Jagersand. <b>"Real-time salient
+      closed boundary tracking via line segments perceptual grouping."</b> 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 4284--4289, Vancouver, BC, Canada, September 24–28, 2017.
+      <br>[<a href="IROS_2017.pdf" target="_blank">pdf</a>][<a href="https://github.com/NathanUA/SalientClosedBoundaryTracking" target="_blank">code</a>][<a href="https://github.com/NathanUA/SalientClosedBoundaryTrackingDataset" target="_blank">data</a>][<a href="https://www.youtube.com/watch?v=RXjD0yHkukI" target="_blank">vido</a>]</p>
+      <br>
+      <p class="text-justify"> [6]. Shida He, <b>Xuebin Qin</b>, Zichen Zhang and Martin Jagersand, Incremental 3D Line Segment Extraction from Semi-dense SLAM, accepted at International Conference on Pattern Recognition (ICPR), August 2018.<br>[<a href="http://webdocs.cs.ualberta.ca/~vis/thesis_shida/" target="_blank">project page</a>]</b>
+      <br>
+      <p class="text-justify"> [7]. <b>Xuebin Qin</b>, Shida He, Xiucheng Yang, Masood Dehghan, Qiming Qin and Martin Jagersand. <b>"Accurate Outline Extraction of Individual Building from High Resolution Aerial Images"</b>
+      <b><u>Accepted in</u></b> IEEE Geoscience and Remote Sensing Letters (GRSL), 2018.
+      <br>[<a href="building_extraction.html" target="_blank">project page</a>]</p>
+      <br>
+      <p class="text-justify"> [8]. <b>Xuebin Qin</b>, Martin Jagersand, Xiucheng Yang, and Jun Wang. <b>"Building facade recognition from aerial images using Delaunay Triangulation induced feature perceptual grouping."</b>
+      In Pattern Recognition (<b>ICPR</b>), 2016 23rd International Conference on, pp. 3368-3373. IEEE, 2016.
+      <br>[<a href="ICPR_2016.pdf" target="_blank">pdf</a>][<a href="https://github.com/NathanUA/BuildingFacadeGrouping" target="_blank">code</a>]</p>
+</div>
+<hr>
+
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Vision Lab (CSC-353)<br>
+			Computing Science Center<br>
+			University of Alberta<br>
+			Edmonton, AB, CANADA T6G2S4</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About</h3>
+                        <ul class="list-inline">
+                            <!--<li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>-->
+                            <li>
+                                <a href="https://www.linkedin.com/in/%E9%9B%AA%E5%BD%AC-%E7%A7%A6-3b3878a3/" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/NathanUA" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>VISITORS</h3>
+                        <!--<img src="img/lianmeng.JPG" width="100px">-->
+                        <a href='https://clustrmaps.com/site/19o45'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=m&d=KU49W0CDfMkh1mruGzoJmpk1HntiofQKkTmWaGHAZgs&co=2c3e50&ct=ffffff'/></a>
+                        <!--<h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Xuebin Qin 2018
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>

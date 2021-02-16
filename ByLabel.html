@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage Xuebin Qin">
+    <meta name="author" content="Xuebin Qin">
+
+    <title>Xuebin Qin University of Alberta</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Xuebin Qin</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+                    <!--<li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>-->
+                </ul>
+                <img src="img/UA-logo.png" alt="ua_logo" width="200">
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header style="background-color:rgb(255,255,255);">
+        <div class="container"  id="maincontent" tabindex="-1" style="color:rgb(0,0,0);">
+            <div class="row">
+                <div class="col-lg-12">
+		    <div>
+                        <h1 style="color:rgb(0,0,0)">ByLabel: A Boundary Based Semi-Automatic Image Annotation Tool</h1>
+	            </div>
+<br>
+		    <div>
+                        <p class="text-center", style="color:rgb(0,0,0)">Xuebin Qin, Shida He, Zichen Zhang, Masood Dehghan and Martin Jagersand</p>
+	            </div>
+<br>
+		    <div>
+                        <p style="color:rgb(0,0,0)">Department of Computing Science, University of Alberta, Edmonton, AB, Canada, T6G 2R3.</p>
+                    </div>
+
+<br>
+		    <div>
+                        <h2 class="text-center", style="color:rgb(0,0,0)">1. Overview</h2>
+	            </div>
+<br><br>
+
+	            <div>
+                        <p class="text-justify", style="color:rgb(0,0,0)", style="text-indent:2em">&nbsp &nbsp
+                        Given an image, ByLabel first detects its edge features and
+                        computes high quality boundary fragments.  Current label
+                        ing tools require the human to accurately click on numerous  boundary  points.   ByLabel  simplifies  this  to  just  selecting among the boundary fragment proposals that ByLabel automatically generates.</p>
+                        <img class="img-responsive" src="img/bylabel/bylabel_bike.png" alt="bylabel_bike1" width="1200">
+
+                    </div>
+<hr>
+<br>
+		    <div>
+                        <h2 class="text-center", style="color:rgb(0,0,0)">2. INSTALLATION</h2>
+                        <br>
+                        <p >Download it from:<br>
+                        <!--<a href="ByLabel.zip" target="_blank" style=" font-size:25px;">ByLabel.zip</a>-->
+                        <!--<p style=" font-size:30px;"> OR </p>-->&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <a href="https://github.com/NathanUA/ground-truth-labeling.git" target="_blank" style=" font-size:25px;">Github</a>
+<br>
+Run it by command: "./bylabel".
+<br>Currently, ByLabel can only run on 64bit Ubuntu OS.
+</p>
+                    </div>
+<hr>
+<br>
+    <div>
+        <h2 class="text-center", style="color:rgb(0,0,0)">3. TUTORIAL</h2>
+        <h3 class="text-center", style="color:rgb(50,50,50)">3.1. Configurations</h3>
+        <p class="text-left"> Go to the root folder ByLabel, open <b>bylabel.cfg</b>: </p>
+        <div>
+            <h4 class="text-left" style="text-transform: lowercase">1. multi_class &nbsp&nbsp&nbsp&nbsp<i style="font-weight:normal">#Indicate the number of to-be-annotated classes</i></h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<b>"0"</b>&nbsp&nbsp&nbsp&nbsp <i>binary classes annotation. <!--Output maps will be binary.--></i></p>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<b>"1"</b>&nbsp&nbsp&nbsp&nbsp <i>multiple classes annotation. <!--Inputing of class names are required when annotating. Output maps will be colorful.--></i></p>
+        </div>
+        <div>
+            <h4 class="text-left" style="text-transform: lowercase">2. source_type &nbsp&nbsp&nbsp&nbsp<i style="font-weight:normal">#Indicate the type of to-be-annotated files</i></h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<b>"1"</b>&nbsp&nbsp&nbsp&nbsp <i>Images (All formats that supported by OpenCV such as JPG, PNG, BMP, TIF and MPEG).</i></p>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<b>"2"</b>&nbsp&nbsp&nbsp&nbsp <i>Video (All formats that supported by OpenCV such as MP4 and AVI).</i></p>
+        </div>
+        <div>
+            <h4 class="text-left" style="text-transform: lowercase">3. input_path  &nbsp&nbsp&nbsp&nbsp<i style="font-weight:normal">#Set the path of source images/video</i></h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp <i>If <b>"souce_type"</b> is <b>"1"</b>, it should be the folder name of images, such as <b>"./Test/images"</b>.</i></p>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp <i>If <b>"souce_type"</b> is <b>"2"</b>, it should be the full path and name of the video, such as <b>"./Test/demo.avi"</b>.</i></p>
+        </div>
+        <div>
+            <h4 class="text-left" style="text-transform: lowercase">4. output_path  &nbsp&nbsp&nbsp&nbsp<i style="font-weight:normal">#Set the path of outputs</i></h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp <i>Such as <b>"./Test/annotation"</b>. If the folder "annotation" does not exit, the tool will create a new folder named as "annotation".</i></p>
+        </div>
+        <div>
+            <h4 class="text-left" style="text-transform: lowercase">5. simple_shape &nbsp&nbsp&nbsp&nbsp<i style="font-weight:normal">#Indicate the shape complexity of to-be-annotated objects</i></h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<b>"0"</b>&nbsp&nbsp&nbsp&nbsp <i>Target objects with multiple boundaries.</i></p>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<b>"1"</b>&nbsp&nbsp&nbsp&nbsp <i>Target objects with single boundary.</i></p>
+        </div>
+        <div>
+            <h4 class="text-left" style="text-transform: lowercase">6. start_idx &nbsp&nbsp&nbsp&nbsp<i style="font-weight:normal">#Indicate the starting index of to-be-annotated images</i></h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp <i>This is used to neglect the first <b>"start_idx"</b> images/frames.</i></p>
+        </div>
+
+        <h3 class="text-center", style="color:rgb(50,50,50)">3.2. Operations</h3>
+        <p class="text-left"> Mouse and keyboard operations of ByLabel: </p>
+        <div>
+            <h4 class="text-left">1. Mouse left button click </h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>Select detected edge fragments or draw control points.</i></p>
+        </div>
+        <div>
+            <h4 class="text-left">2. Mouse middle button (mouse wheel) click</h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>Close the selected boundary.</i></p>
+        </div>
+        <div>
+            <h4 class="text-left">3. Mouse wheel scroll</h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>Zoom in/out the image.</i></p>
+        </div>
+        <div>
+            <h4 class="text-left">4. "a"</h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>Switch between "selecting" and "drawing" mode.</i></p>
+        </div>
+        <div>
+            <h4 class="text-left">5. "b"</h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>Break edge fragments at the pixel where mouse cursor is located.</i></p>
+        </div>
+        <div>
+            <h4 class="text-left">6. "e"</h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>Enable or disable showing of detected edge fragments.</i></p>
+        </div>
+        <div>
+            <h4 class="text-left">7. "f"</h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>Unselect the last selected edge fragment or segment.</i></p>
+        </div>
+        <div>
+            <h4 class="text-left">8. "Esc"</h4>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>Exit ByLabel.</i></p>
+        </div>
+
+
+
+        <h3 class="text-center", style="color:rgb(50,50,50)">3.3. Outputs</h3>
+        <div>
+            <p class="text-left">Annotation are outputed in following seven folders:</p>
+            <img src="img/bylabel/outputs.jpg" alt="outputs" width="400">
+            <p class="text-left">The folder <b>"annotation"</b> is assigned by users, other names are also allowed. Following seven folders are generated by ByLabel.</p>
+        </div>
+        <div>
+            <h3 class="text-left" style="text-transform: lowercase">1. color_im_overlap</h3>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>Images with annotated boundaries are outputed in this folder for after annotation checking.</i></p>
+            <img class="img-responsive" src="img/bylabel/cup_candy_edge.png" alt="color_im_overlap" width="400">
+        </div>
+        <div>
+            <h3 class="text-left" style="text-transform: lowercase">2. edge_map_classes</h3>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>(1) For each annotated image, there will be a corresponding <b>class-based</b> colorful <b>edge map</b> and a <b>.txt</b> file in this folder. </i></p>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>(2) In a color map, each class is assigned a unique color. The .txt file records the objects' class names and their color code as follows:<br>
+            <b>"2<br>
+            cup 185 185 175<br>
+            candy 165 185 115"</b><br>
+            The number in the first line denotes the annotated classes of its' corresponding image.</i></p>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>(3) There is another file named as <b>"classesColor.txt"</b> which records those class names and their corresponding color codes as follows:<br>
+            <b>"4<br>
+            cup 185 185 175<br>
+            candy 165 185 115<br>
+            scissors 195 185 195<br>
+            bowl 205 185 195"</b><br>
+            The number in the first line denotes the totally annotated classes in <b>all of the images</b>.</i></p>
+            <img class="img-responsive" src="img/bylabel/cup_candy_edge_class.png" alt="edge_map_classes" width="400">
+        </div>
+        <div>
+            <h3 class="text-left" style="text-transform: lowercase">3. edge_map_instances</h3>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>(1) For each annotated image, there will be a corresponding <b>instance-based</b> colorful <b>edge map</b> and a <b>.txt</b> file in this folder. </i></p>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>(2) In a color map, each object instance is assigned a unique color. The .txt file records those objects' class names and their corresponding color codes as follows:<br>
+            <b>"4<br>
+            cup 155 185 175<br>
+            cup 155 185 225<br>
+            cup 155 185 115<br>
+            cup 155 185 195<br>
+            candy 155 185 125<br>
+            candy 155 185 145<br>
+            candy 155 185 135<br>
+            candy 155 185 165"</b><br>
+            The number in the first line denotes the totally annotated objects in this image.</i></p>
+            <img class="img-responsive" src="img/bylabel/cup_candy_edge_instances.png" alt="edge_map_instances" width="400">
+        </div>
+        <div>
+            <h3 class="text-left" style="text-transform: lowercase">4. region_map_classes</h3>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>The outputs in this folder are similar to that in folder <b>"edge_map_classes"</b>.</i></p>
+            <img class="img-responsive" src="img/bylabel/cup_candy_classes.png" alt="cup_candy_classes" width="400">
+        </div>
+        <div>
+            <h3 class="text-left" style="text-transform: lowercase">5. region_map_instances</h3>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>The outputs in this folder are similar to that in folder <b>"edge_map_instances"</b>.</i></p>
+            <img class="img-responsive" src="img/bylabel/cup_candy_instances.png" alt="cup_candy_instances" width="400">
+        </div>
+        <div>
+            <h3 class="text-left" style="text-transform: lowercase">6. text_<b style="text-transform: uppercase"> EF</b>_pixels</h3>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp For each annotated image, there will be a .txt file in this folder. Each line of a .txt file describes one edge fragment:</p>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i><b>
+            "n<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[edge_fragment_id] [point1.x] [point1.y] [point2.x] [point2.y] ... [pointn.x] [pointn.y]<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[edge_fragment_id] [point1.x] [point1.y] [point2.x] [point2.y] ... [pointn.x] [pointn.y]<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp......"</b></i></p>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp The <b>"n"</b> in the first line indicates the total number of detected edge fragments.</p>
+        </div>
+        <div>
+            <h3 class="text-left" style="text-transform: lowercase">7. text_shape_pixels</h3>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i>For each annotated image, there will be a .txt file in this foler. Each line of a .txt file describes the information of a selected/drawn edge fragment:</i></p>
+            <p class="text-left">&nbsp&nbsp&nbsp&nbsp<i><b>"# [object_id] [class_name] [boundaries_number] [boundary_id] [fragments_number] [edge_fragment_id]
+            [fragment_type] [point1.x] [point1.y] [point2.x] [point2.y] ... [pointm.x] [pointm.y]"</b></i></p>
+        </div>
+
+    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Vision Lab (CSC-353)<br>
+			Computing Science Center<br>
+			University of Alberta<br>
+			Edmonton, AB, CANADA T6G2S4</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.linkedin.com/in/%E9%9B%AA%E5%BD%AC-%E7%A7%A6-3b3878a3/" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/NathanUA" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>VISITORS</h3>
+                        <a href='https://clustrmaps.com/site/19o45'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=m&d=KU49W0CDfMkh1mruGzoJmpk1HntiofQKkTmWaGHAZgs&co=2c3e50&ct=ffffff'/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Xuebin Qin 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+    <!-- jQuery -->
+     <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>
