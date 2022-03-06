@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>DIS</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/dis-logo.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <font size="4" face="verdana" color="#C8C8C8" style="font-weight:bold">Dichotomous Image Segmentation</font>
+                <!--<a class="navbar-brand" href="#page-top"><img src="assets/img/dis-image-seg-3.svg" alt="..." /></a>-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#applications">Demo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#citation">Citation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#github">Github</a></li>
+                        
+                        <!--<li class="nav-item"><a class="nav-link" href="#license">License</a></li>-->
+                        <!--<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+		        <font size="10" face="verdana" color="#d600d6" style="font-weight:bold; text-shadow: 3px 3px #000000"> Highly Accurate <br> Dichotomous Image Segmentation</font>
+                <!--<div class="masthead-subheading">Welcome To Our Studio!</div>-->
+                <!--<div class="masthead-heading text-uppercase">Highly Accurate Dichotomous Image Segmentation</div>-->
+                <!--<a class="btn btn-primary btn-xl text-uppercase" href="#download">Tell Me More</a>-->
+            </div>
+        </header>
+
+        <!-- Applications Grid-->
+        <section class="page-section bg-light" id="applications">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Demo</h2>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/applications/bg-removal.gif" alt="..." />
+                            </a>
+                            
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Image Background Removal</div>
+                                <!--<div class="portfolio-caption-subheading text-muted">Removal</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/applications/ship-demo.gif" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Art Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/applications/view-move.gif" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Simulate View Motion</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/applications/motor-demo.gif" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">AR application based on images</div>
+                                <!--<div class="portfolio-caption-subheading text-muted">Graphic Design</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/applications/motro-video.gif" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">AR application based on videos</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/applications/video-3d.gif" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">3D Video Production</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Grid-->
+        <section class="page-section bg-light" id="overview">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Overview</h2>
+                    <h3 class="section-subheading text-muted">To build the highly accurate Dichotomous Image Segmentation dataset (DIS5K), we first manually collected over 12,000 images from Flickr1 based on our pre-designed keywords. Then, we obtained 5,470 images of 22 groups and 225 categories from the 12,000 images according to the structural complexities of the objects. Each image is then manually labeled with pixel-wise accuracy using GIMP. The labeled targets in DIS5K mainly focus on the “objects of the images defined by the pre-designed keywords (categories)” regardless of their characteristics e.g., salient, common, camouflaged, meticulous, etc. The average per-image labeling time is ∼30 minutes and some images cost up to 10 hours.</h3>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+                <!--<div class="row">
+                    <img class="img-fluid" src="assets/img/overview/categories.png" alt="Categories and Groups" style="width:1200px"/>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Categories and Complexities</div>
+                    </div>
+                </div>-->
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#overviewModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/overview/categories.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 style="text-align:center">Groups and Categories</h4>
+                                <!--<div class="portfolio-caption-heading">Groups and Categories</div>-->
+                                <!--<div class="portfolio-caption-subheading text-muted">Graphic Design</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#overviewModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/overview/complexities_comp.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 style="text-align:center">Quantitative Complexities</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#overviewModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/overview/complexities-qual.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 style="text-align:center">Qualitative Complexities</h4>
+                                <!--<div class="portfolio-caption-heading">Statistics on Groups and Categories</div>-->
+                                <!--<div class="portfolio-caption-subheading text-muted">Graphic Design</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#overviewModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/overview/general-characteristics-small.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 style="text-align:center">Images Characteristics</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#overviewModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/overview/intra_inter_similarities-small.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 style="text-align:center">Intra- and Inter-categories similarities</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#overviewModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/overview/test_subsets-small.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4 style="text-align:center">Dataset Splitting</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download-->
+        <section class="page-section" id="download">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Download(Come Soon)</h2>
+                    <h4 class="my-3">DIS5K Dataset(5,470)</h4>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="assets/img/download/train-small-1.JPG" alt="..." />
+                        <h4 class="my-3">Training Set (3,000)</h4>
+                        <h3 class="section-subheading text-muted">The training set (DIS-TR) contains 3,000 images paired with accurately labeled binary masks.</h3>
+                        <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="assets/img/download/valid-small-1.JPG" alt="..." />
+                        <h4 class="my-3">Validation Set (470)</h4>
+                        <h3 class="section-subheading text-muted">The validation set (DIS-VD) contains 470 images paired with accurately labeled binary masks.</h3>
+                        <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="assets/img/download/test-small-1.JPG" alt="..." />
+                        <h4 class="my-3">Test Set (2,000)</h4>
+                        <h3 class="section-subheading text-muted">The test set contains 2,000 images, which are split into four subsets (DIS-TE1, DIS-TE2, DIS-TE3 and DIS-TE4, each contains 500 images) based on the shape complexities of the labeled masks. </h3>
+
+                        <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Citation -->
+        <section class="page-section" id="citation">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Citation</h2>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+                <h3 class="section-subheading text-muted">Xuebin Qin, Hang Dai, Xiaobin Hu, Deng-Ping Fan, Ling Shao, and Luc Van Gool. Highly Accurate Dichotomous Image Segmentation. 2022.[PDF][Github]</h3>
+                <p>Bibtex</p>
+                <p class="bibtex", align="left">@misc{qin2022, <br>title={Highly Accurate Dichotomous Image Segmentation}, <br>        author={Xuebin Qin and Hang Dai and Xiaobin Hu and Deng-Ping Fan and Ling Shao and Luc Van Gool},<br>        year={2022},<br>        eprint={xxxx}, <br>        archivePrefix={arXiv}, <br>        primaryClass={cs.CV} <br>}
+                </p>
+            </div>
+        </section>
+        <!-- Team-->
+        <!--<section class="page-section bg-light" id="license">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">License</h2>
+                </div>
+            </div>
+        </section>-->
+        
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; DIS Team 2022</div>
+                    <!--<div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>-->
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Applications Modals-->
+        <!-- Applications item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Image Background Removal</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/applications/bg-removal.gif" alt="..." />
+                                    <p>Image background removal.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Art Design</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/applications/ship-demo.gif" alt="..." />
+                                    <p>Art Design based on backgrounds removed images.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Simulate View Motion</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/applications/view-move.gif" alt="..." />
+                                    <p>Combine one or multiple backgrounds removed images with a background image to simulate the camera view motion.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">AR Application</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/applications/motor-demo.gif" alt="..." />
+                                    <p>This video presents the process of moving object in cyber-space to real world.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">AR Application</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/applications/motro-video.gif" alt="..." />
+                                    <p>Demo generated by overlapping backgrounds removed videos with an image. This demo tries to bridge the cyber-space and the real-world.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">3D Video Production</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/applications/video-3d.gif" alt="..." />
+                                    <p>The 3D model shown in this video is built by extruding highly accurate segmentation mask. Its texture is the background-removed images. The whole process requires almost zero human interventions.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- -->
+        <!-- Overview Modals-->
+        <!-- Overview item 1 modal popup-->
+        
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="overviewModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Groups and Categories</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/overview/categories.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/overview/statistics.jpg" alt="..." />
+                                    <p>Our highly accurate Dichotomous Image Segmentation dataset (DIS5K) contains 5,470 images images of 22 groups and 225 categories manually collected from Flickr based on our pre-designed keywords.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Number of Images:</strong>
+                                            5,470
+                                        </li>
+                                        <li>
+                                            <strong>Number of Groups:</strong>
+                                            22
+                                        </li>
+                                        <li>
+                                            <strong>Number of Categories:</strong>
+                                            225
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="overviewModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Quantitative Complexities</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/overview/complexities_comp.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/overview/datasets-complexities.JPG" alt="..." />
+                                    <p>These plots illustrate the comparisons of different dichotomous datasets in terms of correlations between dataset scale (D), the isoperimetric inequality quotient (IPQ), the number of object contours (Cnum) and the number of dominant points (Pnum).</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>D:</strong>
+                                            Higher is better
+                                        </li>
+                                        <li>
+                                            <strong>IPQ:</strong>
+                                            Higher is better
+                                        </li>
+                                        <li>
+                                            <strong>Cnum:</strong>
+                                            Higher is better
+                                        </li>
+                                        <li>
+                                            <strong>Pnum:</strong>
+                                            Higher is better
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="overviewModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Qualitative Complexities</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/overview/complexities-qual.jpg" alt="..." />
+                                    <p>Our DIS5K dataset contains diversified targets from different categories, which have very different structure complexities.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/overview/complexities-qual-datasets.jpg" alt="..." />
+                                    <p>Compared with other dichotomous segmentation datasets, our DIS5K provides more detailed and accurate ground truth masks and has larger intra-categorical image diversities.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="overviewModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Image Characteristics</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/overview/general-characteristics-small.jpg" alt="..." />
+                                    <p>This figure shows five typical samples from our DIS5K, which have certain characteristics similar to that of the existing dichotomous segmentation tasks, such as salient object detection (SOD), salient object in clutter (SOC), camouflaged object detection (COD), thin object segmentation (TOS), meticulous object segmentation (MOS).</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="overviewModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Intra- and Inter-categories similarities</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/overview/intra_inter_similarities-small.jpg" alt="..." />
+                                    <p>Our DIS5K dataset provides relatively richer samples for studying the intra-category and inter-category similarities and dissimilarities. More qualitative and quantitative stud￾ies will be helpful to diversified vision tasks, such as image (shape) classification, segmentation, etc.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Keywords:</strong>
+                                            Intra- and inter-categories similarities. 
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="overviewModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Dataset Splitting</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/overview/test_subsets-small.jpg" alt="..." />
+                                    <img class="img-fluid" src="assets/img/overview/subsets-complexities.JPG" alt="..." />
+                                    <p>We split 5,470 images in DIS5K into three subsets: DIS-TR (3,000), DIS-VD (470), and DIS-TE (2,000) for training, validation, and testing. Since the object shape and structure complexities in our dataset are diversified, the 2000 images of DIS-TE are further split into four subsets with ascending shape complexities for a more comprehen￾sive evaluation. Specifically, we first rank the 2,000 testing images in ascending order according to the multiplication (IPQ × Pnum) of their structure complexities IPQ and boundary complexities Pnum. Then, DIS-TE is split into four subsets (i.e., DIS-TE1∼DIS-TE4) with 500 images in each subset to represent four testing difficulty levels.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>DIS-TR:</strong>
+                                            3,000
+                                        </li>
+                                        <li>
+                                            <strong>DIS-VD:</strong>
+                                            470
+                                        </li>
+                                        <li>
+                                            <strong>DIS-TE1:</strong>
+                                            500
+                                        </li>
+                                        <li>
+                                            <strong>DIS-TE2:</strong>
+                                            500
+                                        </li>
+                                        <li>
+                                            <strong>DIS-TE3:</strong>
+                                            500
+                                        </li>
+                                        <li>
+                                            <strong>DIS-TE4:</strong>
+                                            500
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
