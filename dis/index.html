@@ -32,6 +32,7 @@
                         <li class="nav-item"><a class="nav-link" href="#applications">Demo</a></li>
                         <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
                         <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#benchmark">Benchmark</a></li>
                         <li class="nav-item"><a class="nav-link" href="#citation">Citation</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#github">Github</a></li> -->
                         
@@ -155,7 +156,8 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Overview</h2>
-                    <h3 class="section-subheading text-muted">To build the highly accurate Dichotomous Image Segmentation dataset (DIS5K), we first manually collected over 12,000 images from Flickr1 based on our pre-designed keywords. Then, we obtained 5,470 images of 22 groups and 225 categories from the 12,000 images according to the structural complexities of the objects. Each image is then manually labeled with pixel-wise accuracy using GIMP. The labeled targets in DIS5K mainly focus on the “objects of the images defined by the pre-designed keywords (categories)” regardless of their characteristics e.g., salient, common, camouflaged, meticulous, etc. The average per-image labeling time is ∼30 minutes and some images cost up to 10 hours.</h3>
+                    <h3 class="section-subheading text-muted" style="text-align:justify">Currently, existing image segmentation tasks mainly focus on segmenting objects with specific characteristics, e.g., salient, camouflaged, meticulous, or specific categories. Most of them have the same input/output formats, and barely use exclusive mechanisms designed for segmenting targets in their models, which means almost all tasks are dataset-dependent. Thus, it is very promising to formulate a category-agnostic DIS task for accurately segmenting objects with different structure complexities, regardless of their characteristics. Compared with semantic segmentation, the proposed DIS task usually focuses on images with single or a few targets, from which getting richer accurate details of each target is more feasible.</h3>
+                    <h3 class="section-subheading text-muted" style="text-align:justify">To build the highly accurate Dichotomous Image Segmentation dataset (DIS5K), we first manually collected over 12,000 images from Flickr1 based on our pre-designed keywords. Then, we obtained 5,470 images of 22 groups and 225 categories from the 12,000 images according to the structural complexities of the objects. Each image is then manually labeled with pixel-wise accuracy using GIMP. The labeled targets in DIS5K mainly focus on the “objects of the images defined by the pre-designed keywords (categories)” regardless of their characteristics e.g., salient, common, camouflaged, meticulous, etc. The average per-image labeling time is ∼30 minutes and some images cost up to 10 hours.</h3>
                     <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
                 </div>
                 <!--<div class="row">
@@ -289,21 +291,46 @@
             </div>
         </section>
 
+        <!-- Benchmark-->
+        <section class="page-section" id="benchmark">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Benchmark</h2>
+                    <!-- <h4 class="my-3">DIS5K Dataset (5,470)</h4> -->
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+                <div class="row text-center">
+                    <!-- <div class="col-md-1"> -->
+                        <img class="img-fluid" src="assets/img/benchmark/qual-comp.jpg" alt="..." />
+                        <!-- <h4 class="my-3">Training Set (3,000)</h4> -->
+                        <h4 class="section-subheading text-muted">Qualitative Comparisons Against SOTAs.</h4>
+                    <!-- </div> -->
+                    
+                </div>
+            </div>
+        </section>
+
         <!-- Citation -->
-        <section class="page-section" id="citation">
+        <section class="page-section bg-light" id="citation">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Citation</h2>
                     <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
                 </div>
-                <h3 class="section-subheading text-muted">Xuebin Qin, Hang Dai, Xiaobin Hu, Deng-Ping Fan, Ling Shao, and Luc Van Gool. Highly Accurate Dichotomous Image Segmentation. 2022.[PDF][<a href="https://github.com/xuebinqin/DIS" target="_blank">Github</a>]</h3>
+                <h3 class="section-subheading text-muted">Xuebin Qin, Hang Dai, Xiaobin Hu, Deng-Ping Fan, Ling Shao, and Luc Van Gool. Highly Accurate Dichotomous Image Segmentation. 2022.[<a href="https://arxiv.org/pdf/2203.03041.pdf" target="_blank">Arxiv</a>][<a href="https://github.com/xuebinqin/DIS" target="_blank">Github</a>]</h3>
                 <p>Bibtex</p>
-                <p class="bibtex", align="left">@misc{qin2022, <br>title={Highly Accurate Dichotomous Image Segmentation}, <br>        author={Xuebin Qin and Hang Dai and Xiaobin Hu and Deng-Ping Fan and Ling Shao and Luc Van Gool},<br>        year={2022},<br>        eprint={xxxx}, <br>        archivePrefix={arXiv}, <br>        primaryClass={cs.CV} <br>}
+                <p class="bibtex", align="left">@misc{qin2022, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp title={Highly Accurate Dichotomous Image Segmentation}, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp author={Xuebin Qin and Hang Dai and Xiaobin Hu and Deng-Ping Fan and Ling Shao and Luc Van Gool}, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp year={2022},
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp eprint={2203.03041}, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp archivePrefix={arXiv}, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp primaryClass={cs.CV} <br>}
                 </p>
             </div>
         </section>
         <!-- Visitor -->
-        <section class="page-section bg-light" id="visitor">
+        <section class="page-section" id="visitor">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Visitors</h2>
                 <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
